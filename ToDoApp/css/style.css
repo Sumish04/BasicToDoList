@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.863);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-image: url(../img/WoodBlack.jpg);
+}
+
+.container {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.747);
+  align-self: center;
+  display: block;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 5px 10px 20px black;
+  padding: 50px;
+  height: 50%;
+  aspect-ratio: 150 / 35;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  outline: none;
+  float: left;
+}
+
+ul {
+  margin: 0;
+  border-left: 6px solid teal;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: rgba(255, 255, 255, 0.747);
+  font-size: 15px;
+  transition: 0.2s;
+  user-select: none;
+}
+
+ul li:hover {
+  background-color: teal;
+}
+
+ul li.checked {
+  background: rgb(165, 165, 165);
+  color: rgba(12, 2, 2, 0.555);
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: whitesmoke;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: red;
+  color: white;
+}
+
+.header {
+  padding: 2px 20px;
+  color: black;
+}
+
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.addBtn {
+  width: 20%;
+  padding: 11px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  outline: none;
+  float: left;
+  background-color: teal;
+  color: white;
+  float: right;
+  text-align: center;
+  min-width: 20%;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background-color: rgba(18, 156, 156, 0.692);
+}
